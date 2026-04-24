@@ -1,8 +1,8 @@
 # Local LLM Agent Tools
 
-Three MCP tools that turn a local LLM into a fully private AI agent — no cloud, no subscriptions, no data leaving your PC.
+Two MCP tools that turn a local LLM into a fully private AI agent — no cloud, no subscriptions, no data leaving your PC.
 
-Built and tested with [LM Studio](https://lmstudio.ai/) + Qwen3.5 4B.
+Built and tested with [LM Studio](https://lmstudio.ai/) + Gemma 4.
 
 ---
 
@@ -10,13 +10,12 @@ Built and tested with [LM Studio](https://lmstudio.ai/) + Qwen3.5 4B.
 
 Local LLMs are private but limited — no internet, no file access, no way to act on the world.
 
-These three tools fix that by plugging into LM Studio's MCP config:
+These two tools fix that by plugging into LM Studio's MCP config:
 
 | Tool | What it adds |
 |---|---|
 | `exa` | Web search — live data via Exa API |
 | `file-access` | Read, edit, and create files on your PC |
-| `terminal-use` | Run and test code in the terminal (with safety restrictions) |
 
 ---
 
@@ -32,10 +31,10 @@ These three tools fix that by plugging into LM Studio's MCP config:
 
 1. Open LM Studio and navigate to your `mcp.json` file
 2. Choose which tools you want from the files in this repo
-3. Copy the content into your `mcp.json`
+3. Copy the content into your `mcp.json` under `"mcpServers"`
 4. Restart LM Studio
 
-If you want all three tools at once, use `full-mcp-config.json` as a reference.
+If you want both tools at once, use `full-mcp-config.json` as a reference.
 
 ---
 
@@ -45,8 +44,7 @@ If you want all three tools at once, use `full-mcp-config.json` as a reference.
 |---|---|
 | `exa-web-search.json` | Web search tool config |
 | `file-access.json` | File read/write/create tool config |
-| `terminal-use.json` | Terminal access tool config (with safety restrictions) |
-| `full-mcp-config.json` | All three tools combined in one file |
+| `full-mcp-config.json` | Both tools combined in one file |
 
 ---
 
@@ -54,7 +52,6 @@ If you want all three tools at once, use `full-mcp-config.json` as a reference.
 
 - For `file-access`, replace the placeholder path with the folder you want the LLM to access
 - For `exa`, replace the placeholder with your own Exa API key — never share your real key publicly
-- `terminal-use` comes with whitelisted commands and blocked system paths by default — edit carefully
 
 ---
 
