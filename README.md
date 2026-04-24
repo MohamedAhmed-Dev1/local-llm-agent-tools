@@ -2,7 +2,7 @@
 
 Two MCP tools that turn a local LLM into a fully private AI agent — no cloud, no subscriptions, no data leaving your PC.
 
-Built and tested with [LM Studio](https://lmstudio.ai/) + Gemma 4.
+Built and tested with [LM Studio](https://lmstudio.ai/) + Qwen3.5 4B.
 
 ---
 
