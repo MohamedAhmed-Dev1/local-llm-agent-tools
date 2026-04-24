@@ -1,0 +1,38 @@
+{
+  "mcpServers": {
+    "file-access": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "PUT THE PATH YOU WANT THE LLM TO ACCESS HERE"
+      ]
+    },
+        "terminal-use": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "super-shell-mcp"
+      ],
+      "env": {
+        "SUPER_SHELL_USE_SHELL": "true",
+        "SUPER_SHELL_ALLOWED_COMMANDS": "dir,echo,type,mkdir,findstr,npm,npx,git,g++,cl,code,cat,ls",
+        "SUPER_SHELL_BLOCKED_PATHS": "C:\\Windows,C:\\Windows\\System32,C:\\Windows\\SysWOW64,C:\\Program Files,C:\\Program Files (x86)"
+      }
+    },
+    "exa": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "exa-mcp-server"
+      ],
+      "env": {
+        "EXA_API_KEY": "PUT YOUR API KEY HERE"
+      }
+    }
+  }
+}
