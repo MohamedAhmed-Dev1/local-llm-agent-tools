@@ -62,4 +62,4 @@ If you want all three tools at once, use `full-mcp-config.json` as a reference.
 
 Mohamed Ahmed — First-year CS student at FCAI, Cairo University.
 
-[LinkedIn](www.linkedin.com/in/mohamed-ahmed-031266221)
+[LinkedIn](https://www.linkedin.com/in/mohamed-ahmed-031266221?utm_source=share_via&utm_content=profile&utm_medium=member_android)
