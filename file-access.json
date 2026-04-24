@@ -1,0 +1,10 @@
+"file-access": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "PUT THE PATH YOU WANT THE LLM TO ACCESS HERE"
+      ]
+    }
